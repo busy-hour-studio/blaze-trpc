@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.1-4](https://github.com/Busy-Hour-Studio/blaze-trpc/compare/v0.0.1-3...v0.0.1-4) (2024-09-19)
+
+
+### Bug Fixes
+
+* allow middleware ([9f595aa](https://github.com/Busy-Hour-Studio/blaze-trpc/commit/9f595aa080122331ab60999f61ea402ad2e5233b))
+
 ## [0.0.1-3](https://github.com/Busy-Hour-Studio/blaze-trpc/compare/v0.0.1-2...v0.0.1-3) (2024-09-19)
 
 
