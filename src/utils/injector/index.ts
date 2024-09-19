@@ -6,11 +6,11 @@ import { loadTrpcAction } from './helper';
 export function useTrpc(
   this: Blaze,
   path: string,
-  { endpoint = '/trpc', ...option }: UseBlazeTrpcOption = {}
+  { endpoint = '/trpc', middlewares = [], ...option }: UseBlazeTrpcOption = {}
 ): BlazeTrpcInfo {
   const trpc = loadTrpcAction(this);
 
-  this.use(path, async (c) => {
+  this.use(path, ...middlewares, async (c) => {
     const response = await fetchRequestHandler({
       ...option,
       router: trpc.router,

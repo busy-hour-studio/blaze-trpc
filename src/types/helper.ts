@@ -2,6 +2,7 @@ import type {
   TrpcMutationCallRecord,
   TrpcQueryCallRecord,
 } from '@busy-hour/blaze';
+import { Middleware } from '@busy-hour/blaze/types/rest';
 import type {
   AnyRouter,
   CreateRouterInner,
@@ -39,4 +40,6 @@ export interface UseBlazeTrpcOption
       FetchHandlerRequestOptions<AnyRouter>,
       'req' | 'createContext' | 'router'
     >
-  > {}
+  > {
+  middlewares?: Middleware[1][];
+}
