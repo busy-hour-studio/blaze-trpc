@@ -1,3 +1,4 @@
+import './types/blaze';
 import { Blaze } from '@busy-hour/blaze';
 import { useTrpc } from './utils/injector';
 
