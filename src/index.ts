@@ -1,15 +1,10 @@
-import { initTRPC } from '@trpc/server';
 import { Blaze } from '@busy-hour/blaze';
-import { constructTrpcAction } from './utils/constructor';
+import { useTrpc } from './utils/injector';
 
-export function loadTrpcAction(app: Blaze) {
-  const trpc = initTRPC.create();
-
-  const router = trpc.router(constructTrpcAction(app, trpc.procedure));
-
-  return {
-    router,
-    instance: trpc,
-    procedure: trpc.procedure,
-  };
+export function setupBlazeTrpc() {
+  if (!Blaze.prototype.useTrpc) {
+    Blaze.prototype.useTrpc = useTrpc;
+  }
 }
+
+setupBlazeTrpc();

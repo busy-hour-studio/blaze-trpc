@@ -109,7 +109,7 @@
       {
         "name": "@busy-hour/blaze-types",
         "servicePaths": ["./example/services"],
-        "outputPath": "./src/types",
+        "outputPath": "./example/types",
         "withTrpc": true,
       }
     ]

@@ -1,10 +1,9 @@
-import { trpcServer } from '@hono/trpc-server';
+import '../src';
 import { createTRPCProxyClient, httpBatchLink } from '@trpc/client';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { Blaze } from '@busy-hour/blaze';
 import { cors } from '@busy-hour/blaze/cors';
-import { loadTrpcAction } from '../src';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -20,16 +19,9 @@ await app.load({
 
 app.start();
 
-const { router } = loadTrpcAction(app);
+const { router } = app.useTrpc('/trpc/*');
 
 type Router = typeof router;
-
-app.use(
-  '/trpc/*',
-  trpcServer({
-    router,
-  })
-);
 
 app.doc('/doc', {
   openapi: '3.0.0',

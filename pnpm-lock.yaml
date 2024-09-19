@@ -7,20 +7,13 @@ settings:
 importers:
 
   .:
-    dependencies:
+    devDependencies:
       '@busy-hour/blaze':
-        specifier: 4.0.0-2
+        specifier: '>=4.0.0-2'
         version: 4.0.0-2
       '@busy-hour/blaze-types':
-        specifier: 0.2.0-1
+        specifier: '>=0.2.0-1'
         version: 0.2.0-1(@busy-hour/blaze@4.0.0-2)
-      '@hono/trpc-server':
-        specifier: ^0.3.2
-        version: 0.3.2(@trpc/server@10.45.2)(hono@4.6.2)
-      '@trpc/server':
-        specifier: ^10.45.2
-        version: 10.45.2
-    devDependencies:
       '@commitlint/cli':
         specifier: ^17.8.1
         version: 17.8.1
@@ -33,6 +26,9 @@ importers:
       '@trpc/client':
         specifier: ^10.45.2
         version: 10.45.2(@trpc/server@10.45.2)
+      '@trpc/server':
+        specifier: ^10.45.2
+        version: 10.45.2
       '@types/glob':
         specifier: ^8.1.0
         version: 8.1.0
@@ -500,13 +496,6 @@ packages:
     engines: {node: '>=18.14.1'}
     peerDependencies:
       hono: ^4
-
-  '@hono/trpc-server@0.3.2':
-    resolution: {integrity: sha512-dTKDrSldjBn0hi9FjHOGdiHgMCWPoW5NaBUTQRNLyVL9JcJJu9oiwTFoIscPFxc9CF2rAeA8aRGHoFJK+A8cLw==}
-    engines: {node: '>=16.0.0'}
-    peerDependencies:
-      '@trpc/server': ^10.10.0 || >11.0.0-rc
-      hono: '>=4.*'
 
   '@humanwhocodes/config-array@0.11.14':
     resolution: {integrity: sha512-3T8LkOmg45BV5FICb15QQMsyUSWrQ8AygVfC7ZG32zOalnqrilm018ZVCw0eapXux8FtA33q8PSRSstjee3jSg==}
@@ -3013,11 +3002,6 @@ snapshots:
 
   '@hono/node-server@1.13.0(hono@4.6.2)':
     dependencies:
-      hono: 4.6.2
-
-  '@hono/trpc-server@0.3.2(@trpc/server@10.45.2)(hono@4.6.2)':
-    dependencies:
-      '@trpc/server': 10.45.2
       hono: 4.6.2
 
   '@humanwhocodes/config-array@0.11.14':
