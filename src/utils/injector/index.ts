@@ -1,13 +1,13 @@
 import type { Blaze } from '@busy-hour/blaze';
 import { fetchRequestHandler } from '@trpc/server/adapters/fetch';
-import type { UseTrpcOption } from '../../types/helper';
+import type { BlazeTrpcInfo, UseBlazeTrpcOption } from '../../types/helper';
 import { loadTrpcAction } from './helper';
 
 export function useTrpc(
   this: Blaze,
   path: string,
-  { endpoint = '/trpc', ...option }: UseTrpcOption = {}
-) {
+  { endpoint = '/trpc', ...option }: UseBlazeTrpcOption = {}
+): BlazeTrpcInfo {
   const trpc = loadTrpcAction(this);
 
   this.use(path, async (c) => {

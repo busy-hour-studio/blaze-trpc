@@ -80,10 +80,20 @@
       "import": "./dist/esm/index.js",
       "require": "./dist/cjs/index.js"
     },
+    "./types": {
+      "types": "./dist/types/types/helper.d.ts",
+      "import": "./dist/esm/types/helper.js",
+      "require": "./dist/cjs/types/helper.js"
+    },
     "./constructor": {
       "types": "./dist/types/utils/constructor/index.d.ts",
       "import": "./dist/esm/utils/constructor/index.js",
       "require": "./dist/cjs/utils/constructor/index.js"
+    },
+    "./injector": {
+      "types": "./dist/types/utils/injector/index.d.ts",
+      "import": "./dist/esm/utils/injector/index.js",
+      "require": "./dist/cjs/utils/injector/index.js"
     }
   }
 }
