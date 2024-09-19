@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [0.0.1-3](https://github.com/Busy-Hour-Studio/blaze-trpc/compare/v0.0.1-2...v0.0.1-3) (2024-09-19)
+
+
+### Bug Fixes
+
+* any trpc router types ([7b023f7](https://github.com/Busy-Hour-Studio/blaze-trpc/commit/7b023f73b391c01fbe066bf44f4d8aee27fb4993))
+
 ## [0.0.1-2](https://github.com/Busy-Hour-Studio/blaze-trpc/compare/v0.0.1-1...v0.0.1-2) (2024-09-19)
 
 
