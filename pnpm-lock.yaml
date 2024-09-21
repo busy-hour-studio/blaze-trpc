@@ -7,13 +7,14 @@ settings:
 importers:
 
   .:
-    devDependencies:
+    dependencies:
       '@busy-hour/blaze':
-        specifier: '>=4.0.0-2'
-        version: 4.0.0-2
+        specifier: '>=4.0.0-3'
+        version: 4.0.0-3
       '@busy-hour/blaze-types':
-        specifier: '>=0.2.0-1'
-        version: 0.2.0-1(@busy-hour/blaze@4.0.0-2)
+        specifier: '>=0.2.0-3'
+        version: 0.2.0-3
+    devDependencies:
       '@commitlint/cli':
         specifier: ^17.8.1
         version: 17.8.1
@@ -110,13 +111,11 @@ packages:
     resolution: {integrity: sha512-EStJpq4OuY8xYfhGVXngigBJRWxftKX9ksiGDnmlY3o7B/V7KIAc9X4oiK87uPJSc/vs5L869bem5fhZa8caZw==}
     engines: {node: '>=6.9.0'}
 
-  '@busy-hour/blaze-types@0.2.0-1':
-    resolution: {integrity: sha512-a18EVPVvNkpROT6LyMspvGI2UYcUipyIm10F+1HLkNViMbBz4Rm0/zDNyN/qzcP5oPUnhEITMLkjsnepgch8Dw==}
-    peerDependencies:
-      '@busy-hour/blaze': '*'
+  '@busy-hour/blaze-types@0.2.0-3':
+    resolution: {integrity: sha512-kd75gLxNtH+VOTuXmOdBRLLGyZbANp2NjzbXkmeUJO6LzV0c5Syhvv2iOugN9oyS3IOLI3SHnjqrZrKogscqEw==}
 
-  '@busy-hour/blaze@4.0.0-2':
-    resolution: {integrity: sha512-O/ZFy2wyiCncPcph7k2Q/ruYh8WIZ7c87vtn+CHe4YF9vyhSrsRs9lTErfIcK2Hh+HPgsMbTMjq0h8hHABuBRg==}
+  '@busy-hour/blaze@4.0.0-3':
+    resolution: {integrity: sha512-isd1OZXjDHN+tBkWmnLlb1MpjMitsLa9yaSE33//ihhDIsDywMJQPoys+6b9ANaqdQOXt6lPyKDihrRZDculEA==}
 
   '@commitlint/cli@17.8.1':
     resolution: {integrity: sha512-ay+WbzQesE0Rv4EQKfNbSMiJJ12KdKTDzIt0tcK4k11FdsWmtwP0Kp1NWMOUswfIWo6Eb7p7Ln721Nx9FLNBjg==}
@@ -2706,12 +2705,12 @@ snapshots:
       js-tokens: 4.0.0
       picocolors: 1.1.0
 
-  '@busy-hour/blaze-types@0.2.0-1(@busy-hour/blaze@4.0.0-2)':
+  '@busy-hour/blaze-types@0.2.0-3':
     dependencies:
-      '@busy-hour/blaze': 4.0.0-2
+      '@busy-hour/blaze': 4.0.0-3
       chokidar: 3.6.0
 
-  '@busy-hour/blaze@4.0.0-2':
+  '@busy-hour/blaze@4.0.0-3':
     dependencies:
       hono: 4.6.2
       zod: 3.23.8
